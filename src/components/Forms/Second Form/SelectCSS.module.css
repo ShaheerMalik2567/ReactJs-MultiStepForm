@@ -1,0 +1,66 @@
+.custom-select {
+    position: relative;
+    display: inline-block;
+    font-size: 14px;
+    color: #888;
+    margin-top: 25px;
+    width: 150px;
+    height: 30px;
+  }
+  
+  .custom-select select {
+    display: block;
+    width: 250px;
+    min-height: 35px;
+    background: #cbe7ff;
+    border-radius: 3px;
+    border: 2px solid #000000;
+    outline: none;
+    padding: 0 20px 0 10px;
+    margin-top: 5px;
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+  }
+  
+  .custom-select::after {
+    content: '';
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent;
+    border-top-color: #222;
+    display: inline-block;
+    border-radius: 2px;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+  }
+  
+  .custom-select .selector-options {
+    list-style: none;
+    padding: 5px 0;
+    margin: 0;
+    background: #4a5054;
+    color: #fff;
+    border-radius: 4px;
+    z-index: 1;
+    width: 96%;
+    position: absolute;
+    left: 2%;
+    top: 35%;
+  }
+  
+  .custom-select .selector-options li {
+    height: 35px;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .custom-select .selector-options li:hover {
+    background: #bac9cf;
+  }
